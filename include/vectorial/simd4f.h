@@ -16,10 +16,12 @@
     #include "simd4f_scalar.h"
 #elif defined(VECTORIAL_SSE)
     #include "simd4f_sse.h"
+    #include "sse_mathfun.h"
 #elif defined(VECTORIAL_GNU)
     #include "simd4f_gnu.h"
 #elif defined(VECTORIAL_NEON)
     #include "simd4f_neon.h"
+    #include "neon_mathfun.h"
 #else
     #error No implementation defined
 #endif
